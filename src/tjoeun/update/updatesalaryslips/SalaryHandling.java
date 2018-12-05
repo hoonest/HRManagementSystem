@@ -66,7 +66,7 @@ public class SalaryHandling {
             
             ConnectionClass.query("insert into salaryslip(sr, name, post, month, days, advance, deduction, net_salary, dt, gross_salary)" +
                  "values ("+ ssc.getId()+", '"+ ssc.getName()+"', '"+ ssc.getPost() +"', '"+ssc.getMonthName() +"', "+ ssc.getTotalWorkingDays()+","+ ssc.getAdvance()+
-                 ", "+ ssc.getDeduction() +" , " + ssc.getNetSalary() + " ,'" + ssc.getDt() + "' , " + ssc.getGross() +");");
+                 ", "+ ssc.getDeduction() +" , " + ssc.getNetSalary() + " ,'" + ssc.getDt() + "' , " + ssc.getGross() +")");
             
             ss.add(ssc);
             new SalarySlipDetail(null, true, ssc).setVisible(true);

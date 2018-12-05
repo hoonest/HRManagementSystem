@@ -56,7 +56,7 @@ public class DailyTaskHandling {
                  + dt.getAttndnc()+"', '"
                  +dt.getWork()+"', '"
                  +dt.getAssignDate()+"', '"
-                 +dt.getAssignStatus()+"');");
+                 +dt.getAssignStatus()+"')");
          dailylist.add(dt);
          }catch(IllegalArgumentException e){
              e.getMessage();
